@@ -4,10 +4,16 @@ A task management application using go-lang
 
 ### Packages used
 
-1. go get "github.com/go-chi/chi"
-2. go get "github.com/go-chi/chi/middleware"
-3. go get "github.com/thedevsaddam/renderer"
-4. go get "gopkg.in/mgo.v2"
-5. go get "gopkg.in/mgo.v2/bson"
+    "context"
+    "encoding/json"
+    "log"
+    "net/http"
+    "os"
+    "os/signal"
+    "time"
 
-
+    "github.com/go-chi/chi"
+    "github.com/go-chi/chi/middleware"
+    "github.com/thedevsaddam/renderer"
+    "gorm.io/driver/postgres"
+    "gorm.io/gorm"
